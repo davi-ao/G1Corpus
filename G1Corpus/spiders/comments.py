@@ -10,7 +10,7 @@ class CommentsSpider(scrapy.Spider):
     def __init__(self):
         super(CommentsSpider, self).__init__()
 
-        for i in range(451, 501):
+        for i in range(951, 1001):
             self.start_urls.append('http://g1.globo.com/index/feed/pagina-' + str(i) + '.html')
 
     def parse(self, response):
